@@ -9,21 +9,19 @@ Next.js web application for **AI Proposal & RFP Copilot** (Tecveq).
 | Framework | Next.js 14 (TypeScript, App Router) |
 | Styling | Tailwind CSS + shadcn/ui |
 | Data | TanStack Query + Axios |
-| Editor | Tiptap (proposals) |
-| Auth | JWT against Backend API |
+| Icons | Lucide React |
+| Auth | JWT against Backend API (later) |
 
-## Repository layout
+## Getting started
 
-```text
-/
-├── app/              # Next.js App Router (Day 3+)
-├── components/       # UI components (Day 3+)
-├── lib/              # API client, helpers (later)
-├── .gitignore
-└── README.md
+```bash
+npm install
+npm run dev
 ```
 
-Backend & AI service live in: [AI-Proposal-RFP-Copilot-Backend](https://github.com/TecVeq-Solutions/AI-Proposal-RFP-Copilot-Backend).
+App: [http://localhost:3000](http://localhost:3000) → redirects to `/dashboard`
+
+Backend API (Day 2): `http://localhost:5000`
 
 ## Branches
 
@@ -33,11 +31,6 @@ Backend & AI service live in: [AI-Proposal-RFP-Copilot-Backend](https://github.c
 | `staging` | Testing & stable pre-production |
 | `main` | Production |
 
-## Getting started (after Day 3)
+## Related
 
-```bash
-npm install
-npm run dev
-```
-
-App will run at [http://localhost:3000](http://localhost:3000). Point API calls at the Backend (`http://localhost:5000` by default after Day 2).
+Backend & AI: [AI-Proposal-RFP-Copilot-Backend](https://github.com/TecVeq-Solutions/AI-Proposal-RFP-Copilot-Backend)
