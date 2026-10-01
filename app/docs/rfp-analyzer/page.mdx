@@ -1,0 +1,32 @@
+# RFP Analyzer
+
+## How AI analysis works
+
+When you start an analysis, the RFP text is split into chunks, indexed, and sent to the AI model, which returns a structured summary: requirements, key dates, evaluation criteria and risks. Large RFPs can take a few minutes.
+
+## Understanding requirements extraction
+
+Each requirement has an ID, the original wording, a category and a priority. Requirements are extracted verbatim so you can always trace them back to the source document.
+
+## The compliance matrix explained
+
+The compliance matrix lists every requirement next to your response status, so you can see at a glance what is covered and what is missing.
+
+| Status | Meaning |
+| --- | --- |
+| Compliant | You fully meet the requirement |
+| Partial | You meet it with caveats |
+| Non-compliant | You do not meet it |
+| Pending | Not reviewed yet |
+
+## Updating compliance status
+
+Click a status cell in the matrix and pick a new value. Changes are saved automatically.
+
+## Exporting to Excel
+
+Use **Export** on the analysis page to download the matrix as an Excel (.xlsx) file to share with stakeholders.
+
+## Using the Q&A chat
+
+Ask questions about the RFP in plain language — for example *"What is the submission deadline?"* — and the assistant answers from the document text.
